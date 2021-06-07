@@ -5,145 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-
-    :root {
-      --primary-cyan: hsl(179, 62%, 43%);
-      --primary-ligthcyan: hsl(179,47.2%,51.8%);
-      --primary-yellow: hsl(71, 73%, 54%);
-      --neutral-gray: hsl(204, 43%, 93%);
-      --neutral-blue: hsl(218, 22%, 67%);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Karla', sans-serif;
-      background-color: var(--neutral-gray);
-      color: var(--neutral-blue);
-    }
-
-    .container {
-      width: 635px;
-      height: 445px;
-      border-radius: 5px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 255px;
-    }
-
-    .uno {
-      grid-column: 1/3;
-      grid-row: 1/2;
-      padding: 35px;
-    }
-
-    .dos {
-      grid-column: 2/3;
-      grid-row: 2/3;
-      border-radius: 0 0 5px 0;
-    }
-
-    .tres {
-      grid-column: 1/2;
-      grid-row: 2/3;
-      border-radius: 0 0 0 5px;
-    }
-
-    .dos, .tres {
-      color: var(--neutral-gray);
-      padding: 35px;
-    }
-
-    .yellow {
-      color: var(--primary-yellow);
-    }
-
-    .cyan {
-      color: var(--primary-cyan);
-    }
-
-    .bg-cyan {
-      background-color: var(--primary-cyan);
-    }
-
-    .bg-lightcyan {
-      background-color: var(--primary-ligthcyan);
-    }
-
-
-
-  </style>
 </head>
 <body>
 
   <div class="container">
-
-    <div class="uno">
-      <h1 class="cyan">
+    <div class="one">
+      <h2 class="one-title">
         Join our community
-      </h1>
-      <h2 class="yellow">
-        30-day, hassle-free money back guarantee
       </h2>
-      <p>
+      <h3 class="one-subtitle">
+        30-day, hassle-free money back guarantee
+      </h3>
+      <p class="one-paragraph">
         Gain access to our full library of tutorials along with expert code reviews. 
         Perfect for any developers who are serious about honing their skills.
       </p>
     </div>
-    <div class="dos bg-lightcyan">
-      <h1>
+    <div class="two">
+      <h3 class="two-title">
         Why Us
-      </h1>
-      <p>
-        Tutorials by industry experts
-        Peer &amp; expert code review
-        Coding exercises
-        Access to our GitHub repos
-        Community forum
-        Flashcard decks
-        New videos every week
+      </h3>
+      <p class="two-paragraph">
+        Tutorials by industry experts <br>
+        Peer &amp; expert code review <br>
+        Coding exercises <br>
+        Access to our GitHub repos <br>
+        Community forum <br>
+        Flashcard decks <br>
+        New videos every week <br>
       </p>
     </div>
-    <div class="tres bg-cyan">
-      <h1>
+    <div class="three">
+      <h3 class="three-title">
         Monthly Subscription
-      </h1>
-      <h2>
-        <span>&dollar;29</span> per month
-      </h2>
-      <p>
+      </h3>
+      <div class="price-description">
+        <span class="price">&dollar;29</span> <span>per month</span>
+      </div>
+      <p class="three-paragraph">
         Full access for less than &dollar;1 a day
       </p>
-      <a href="">
+      <a class="button" href="">
         Sign Up
       </a>
     </div>
 
   </div>
 
-  <!--
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Elio Flores</a>.
     </p>
   </footer>
-  -->
+
 </body>
 </html>
